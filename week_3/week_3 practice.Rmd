@@ -1,0 +1,32 @@
+---
+title: "Plot"
+author: "Richard"
+date: "2018年3月26日"
+output: html_document
+---
+require(datasets)
+head(airquality)
+
+hist(x=airquality$Month, 
+     main="Histogram of Month",         # 圖片的名稱
+     xlab="Month",                      # X軸的名稱
+     ylab="Frequency")                  # Y軸的名稱
+     
+boxplot(formula = Ozone ~ Month, # Y ~ X (代表X和Y軸要放的數值) 
+        data = airquality,       # 資料
+        xlab = "Month",          # X軸名稱
+        ylab = "Ozone (ppb)",    # Y軸名稱
+        col ="gray")             # 顏色
+
+plot(x=airquality$Month,            # X軸的值
+     y=airquality$Temp,             # Y軸的值
+     main="Month to Temperature",   # 圖片名稱
+     xlab="Month(1~12)",            # X軸名稱
+     ylab="Temperature(degrees F)") # Y軸名稱       
+     
+plot(x=airquality$Ozone,      # X軸的值
+     y=airquality$Wind,       # Y軸的值
+     main="Ozone to Wind",    # 圖片名稱
+     xlab="Ozone(ppb)",       # X軸的名稱
+     ylab="Wind(mph)"         # Y軸的名稱
+)

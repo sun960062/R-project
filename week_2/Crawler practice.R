@@ -7,9 +7,9 @@ title =html_text(title)
 title =iconv(title,"UTF-8")
 title
 url=read_html("http://news.ltn.com.tw/list/newspaper/politics/20180322")
-url=html_nodes(url,".tit p")
+url=html_nodes(url,".list a")
 url=html_attr(url,"href")
-url   ## unsucceful
+url
 
 
 
