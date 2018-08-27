@@ -1,7 +1,7 @@
 library(httr)
 
-name = "linshufen.fans"
-token = "EAACEdEose0cBACaw3El0L6SkezZAuVLxJq6W1wtUhM4Hamk4ipC9KZC0TKkuDauicGBH1VgMAzUipDZAb7FVbm47d4pvYK9o8LL2HSBGEOlGKxGq3qA9UxqwuvxAGgq984e1D9UYJWPhGEGUOxkjBUHKjuzWMlK31aMYZAYriku1tWycZAtBKGvKmRAfeO1AZD"
+name = "junglicity"
+token = "EAACEdEose0cBABzu6ZCjMBZC4kldmWcmQxvD7FfKhAAWWDclfWJtfQyK558NsYO8Mx0JikhTfntdgTbe0QhHHcpxEIxalWBXA1Dkkw3S5wdXKsFI1M8999LZAFf2m3DONHMdkZAoM1WT6GbNTM53y4SZA6IZBnkAFXCNTRKOoatsmopZBggnoYPrKGbZCWZBG068ZD"
 
 url = paste0("https://graph.facebook.com/v2.12/",
              name,
